@@ -25,10 +25,14 @@ module.exports = {
       include: path.join(__dirname, 'client')
     },
     // CSS
-    { 
-      test: /\.styl$/, 
-      include: path.join(__dirname, 'client'),
-      loader: 'style-loader!css-loader!stylus-loader'
+    {
+      test: /\.css$/,
+      //test: /\.css$/,
+      loader: 'style-loader!css-loader',
+      include: path.join(__dirname, 'client')
+
+
+      //loader: 'style-loader!styles-loader!stylus-loader'
     }
     ]
   }

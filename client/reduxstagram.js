@@ -10,8 +10,10 @@ import Single from './components/Single';
 
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import store, { history } from './store'
+import store, { history } from './store';
 import { Provider } from 'react-redux';
+
+import css from './styles/main.css';
 
 const router = (
     <Provider store={store}>
